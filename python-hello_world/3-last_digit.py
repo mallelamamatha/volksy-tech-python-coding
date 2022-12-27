@@ -1,9 +1,14 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-if number > 0:
-    print(number,"greater than 5")
-elif number == 0:
-    print(number,"number is zero")
+last = number % 10
+if number < 0:
+    last = last - 10
+if last == 0:
+    line = ('last digit of ' +str(number) + 'is' + str(last) + 'and is 0')
 else:
-    print(number,less than 6 and not 0")
+    if last >5:
+        line = ('last digit of ' + str(number) + 'is'+ str(last) + 'and is greater' + 'than 5')
+     elif last < 5:
+         line = ('last digit of' + str(number) + 'is'+ str(last) + 'and is less' + 'than 6 and not 0')
+    print(line)
