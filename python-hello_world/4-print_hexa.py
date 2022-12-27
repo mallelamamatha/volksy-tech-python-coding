@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 form i in range(99):
-    print("{:d} = ox{:x}".format(i,i))
+    print("{:d} = 0x{:x}".format(i, i))
